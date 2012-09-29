@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @board.name %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @board.event %>
+</p>
+
+<p>
+  <b>App:</b>
+  <%= @board.app %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @board.description %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%= @board.twitter %>
+</p>
+
+<p>
+  <b>Github:</b>
+  <%= @board.github %>
+</p>
+
+<p>
+  <b>Needs:</b>
+  <%= @board.needs %>
+</p>
+
+
+<%= link_to 'Edit', edit_board_path(@board) %> |
+<%= link_to 'Back', boards_path %>
