@@ -22,8 +22,11 @@
     <td><%= board.event %></td>
     <td><%= board.app %></td>
     <td><%= board.description %></td>
-    <td><% if board.twitter? %><a href="<%= board.twitter_url %>">@<%= board.twitter %></a>
-    <% end %></td>
+    <td>
+      <% if board.twitter? %>
+        <a href="<%= board.twitter_url %>">@<%= board.twitter %></a>
+      <% end %>
+    </td>
     <td><%= board.github %></td>
     <td><%= board.needs %></td>
     <td><%= l board.created_at %></td>
